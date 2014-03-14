@@ -1,0 +1,1000 @@
+//$icons-spacing:20px
+@import "compass/utilities/sprites"
+@import "icons/*.png"
+
+ul
+  list-style: none
+
+form
+  &::-webkit-input-placeholder, &:-moz-placeholder, &::-moz-placeholder, &:-ms-input-placeholder
+    color: #ffffff
+    font: italic 14px georgia
+    text-shadow: 1px 1px 0px #1f4193
+
+body, select, input, textarea
+  color: #333
+
+a
+  color: #3355aa
+  &:hover
+    color: #eebe00
+    text-decoration: none
+
+h1, h2, h3, h4, h5
+  font-family: 'nevisbold'
+
+\::-moz-selection, ::selection
+  background: #fcd700
+  color: #fff
+  text-shadow: none
+
+a:link
+  -webkit-tap-highlight-color: #fcd700
+
+ins
+  background-color: #fcd700
+  color: #000
+  text-decoration: none
+
+mark
+  background-color: #fcd700
+  color: #000
+  font-style: italic
+  font-weight: bold
+
+.align-left
+  float: left
+
+.align-right
+  float: right
+
+.clear
+  clear: both
+
+.home-icon, .about-icon, .blog-icon, .contact-icon
+  width: 14px
+  height: 12px
+  @include icons-sprite(sprite-icons)
+  background-position: center
+  background-repeat: no-repeat
+.home-icon
+  background-position: 0px -4px
+
+.about-icon
+  background-position: -18px -4px
+
+.blog-icon
+  background-position: -43px -1px
+
+.contact-icon
+  background-position: -67px -3px
+
+.setting-ico, .marker-ico, .mic-ico, .go-top-ico, .facebook-ico, .twitt-ico, .linked-in-ico
+  background: url("../images/sprite-icons.png") center no-repeat
+
+.setting-ico
+  background: url("../images/sprite-icons.png") center no-repeat
+  width: 32px
+  height: 27px
+  background-position: 0px -29px
+
+.marker-ico
+  width: 20px
+  height: 23px
+  background-position: -46px -33px
+
+.mic-ico
+  width: 30px
+  height: 18px
+  background-position: -79px -35px
+
+.go-top-ico
+  width: 10px
+  height: 11px
+  background-position: -132px -35px
+  display: inline-block
+
+.facebook-ico, .twitt-ico, .linked-in-ico
+  width: 15px
+  height: 15px
+  display: inline-block
+
+.facebook-ico
+  background-position: -142px -1px
+
+.twitt-ico
+  background-position: -118px -1px
+
+.linked-in-ico
+  background-position: -169px 0px
+
+.logo
+  width: 275px
+  float: left
+  padding: 0
+  margin: 0
+  a
+    font: 50.48px "Times New Roman"
+    text-decoration: none
+    height: 80px
+    line-height: 22px
+    font-weight: bold
+    margin: 0
+    color: #3355aa
+    font-style: italic
+    display: block
+    background: url(../images/logo.jpg) no-repeat center
+    background-size: contain
+    span
+      font: 14.71px "Times New Roman"
+      font-style: italic
+      display: block
+      color: #222222
+      padding-top: 12px
+    &:hover, span:hover
+      text-decoration: none
+      color: #3355aa
+
+.logorightnav
+  float: right
+  display: inline-block
+  ul
+    margin: 0
+    padding: 0
+  li
+    float: left
+    background: url(../images/topnavsep.jpg) no-repeat left top
+    padding: 0px 14px
+    z-index: 200
+    &:after, &:before
+      background: url(../images/topnavsep.jpg) no-repeat left top
+    span
+      display: inline-block
+      margin: 0px
+      margin-right: 8px
+    a
+      color: #3355aa
+      text-decoration: none
+      font: 15px / 24px Georgia, "Times New Roman", Times, serif
+      display: block
+      padding: 8px 0 8px 0
+    &:hover
+      background: url("../images/topnavsep.jpg") no-repeat left top, url("../images/tophover.jpg") repeat-x top
+      background: url(../images/tophover.jpg) repeat-x top \9
+      *background: url(../images/tophover.jpg) repeat-x top
+      _background: url(../images/tophover.jpg) repeat-x top
+      color: #222
+      border-bottom: 3px solid #fff
+      z-index: 100
+    a:hover
+      border-bottom: 3px solid #eebe00
+  .active
+    background: url("../images/topnavsep.jpg") no-repeat left top, url("../images/tophover.jpg") repeat-x top
+    color: #222
+
+.active a
+  border-bottom: 3px solid #eebe00
+
+.navbar .nav > .active > a
+  color: #EEBE00
+  &:hover, &:focus
+    color: #EEBE00
+
+.less-ipad
+  display: none
+
+.large-ipad
+  display: block
+
+.navbar .nav > li > a
+  text-shadow: none
+  color: #ffffff
+
+.nav-collapse
+  .nav > li > a, .dropdown-menu a
+    padding: 5px 15px
+  .nav > li > a:hover, .dropdown-menu a:hover
+    color: #EEBE00
+
+.bluestrip
+  background-color: #3355aa
+  padding: 5px 0px 5px 0px
+
+.blueBack
+  background-color: #3355aa
+  background-image: -moz-linear-gradient(top, #3355aa, #3355aa)
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3355aa), to(#3355aa))
+  background-image: -webkit-linear-gradient(top, #3355aa, #3355aa)
+  background-image: -o-linear-gradient(top, #3355aa, #3355aa)
+  background-image: linear-gradient(to bottom, #3355aa, #3355aa)
+  background-repeat: repeat-x
+  border: 1px solid #3355aa
+  -webkit-border-radius: 0px
+  -moz-border-radius: 0px
+  border-radius: 0
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#3355aa', endColorstr = '#3355aa', GradientType = 0)
+  *zoom: 1
+  -webkit-box-shadow: none
+  -moz-box-shadow: none
+  box-shadow: none
+  .navbar-inner
+    background-color: #3355aa
+    background-image: -moz-linear-gradient(top, #3355aa, #3355aa)
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3355aa), to(#3355aa))
+    background-image: -webkit-linear-gradient(top, #3355aa, #3355aa)
+    background-image: -o-linear-gradient(top, #3355aa, #3355aa)
+    background-image: linear-gradient(to bottom, #3355aa, #3355aa)
+    background-repeat: repeat-x
+    border: 1px solid #3355aa
+    -webkit-border-radius: 0px
+    -moz-border-radius: 0px
+    border-radius: 0
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#3355aa', endColorstr = '#3355aa', GradientType = 0)
+    *zoom: 1
+    -webkit-box-shadow: none
+    -moz-box-shadow: none
+    box-shadow: none
+  .brand
+    display: none
+    float: left
+    padding: 5px 20px 5px 8px
+    margin-left: -20px
+    font-size: 15px
+    font-weight: 200
+    font-style: italic
+    color: #ffffff
+    text-shadow: 0px 0px 2px #FFFFFF
+.navbar .btn-navbar
+  float: right
+  padding: 7px 10px
+  margin-right: 5px
+  margin-left: 5px
+  color: #3355AA
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25)
+  background-color: #3355AA
+  *background-color: #3355AA
+  background-image: -moz-linear-gradient(top, #3355aa, #3355aa)
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3355aa), to(#3355aa))
+  background-image: -webkit-linear-gradient(top, #3355aa, #3355aa)
+  background-image: -o-linear-gradient(top, #3355aa, #3355aa)
+  background-image: linear-gradient(to bottom, #3355aa, #3355aa)
+  background-repeat: repeat-x
+  border-color: #3355AA #3355AA #3355AA
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#3355AA', endColorstr = '#3355AA', GradientType = 0)
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false)
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075)
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075)
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075)
+  &:hover, &:focus, &:active, &.active, &.disabled, &[disabled]
+    color: #3355AA
+    background-color: #3355AA
+    *background-color: #3355AA
+    .icon-bar
+      display: block
+      width: 18px
+      height: 2px
+      background-color: #EEBE00
+      -webkit-border-radius: 1px
+      -moz-border-radius: 1px
+      border-radius: 1px
+      -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25)
+      -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25)
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25)
+
+textarea
+  background-color: #214193
+  color: #ffffff
+  border: 1px solid #cccccc
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075)
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075)
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075)
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s
+  transition: border linear 0.2s, box-shadow linear 0.2s
+
+input
+  &[type="text"], &[type="password"], &[type="datetime"], &[type="datetime-local"], &[type="date"], &[type="month"], &[type="time"], &[type="week"], &[type="number"], &[type="email"], &[type="url"], &[type="search"], &[type="tel"], &[type="color"]
+    background-color: #214193
+    color: #ffffff
+    border: 1px solid #cccccc
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075)
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075)
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075)
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s
+    transition: border linear 0.2s, box-shadow linear 0.2s
+
+.uneditable-input
+  background-color: #214193
+  color: #ffffff
+  border: 1px solid #cccccc
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075)
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075)
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075)
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s
+  transition: border linear 0.2s, box-shadow linear 0.2s
+
+.navigation
+  margin: 0
+  padding: 0
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+    li
+      float: left
+      background: url(../images/navsep.jpg) no-repeat right center
+      &:first-child a
+        background: url(../images/navsep.jpg) no-repeat left center
+  li a
+    float: left
+    display: block
+    font: italic 15px / 26px Georgia, "Times New Roman", Times, serif
+    color: #ffffff
+    text-decoration: none
+    padding: 0px 15px 0px 15px
+    text-shadow: 1px 1px 0px #114499
+
+.navigation-font li a
+  float: left
+  display: block
+  font: italic normal 13px / 26px Georgia, "Times New Roman", Times, serif
+  font-style: italic
+  text-decoration: none
+  color: #FFF
+  padding: 0px 10px 0px 10px
+
+.navigation li a:hover
+  color: #eebe00
+
+.first
+  padding-left: 0 !important
+
+.mainWrap
+  padding-top: 150px
+
+.navigation-wrap
+  margin-bottom: 40px
+
+.last
+  margin-right: 0px !important
+
+.sliderout
+  background-color: #fff
+  border-radius: 5px
+  -moz-border-radius: 5px
+  -webkit-border-radius: 5px
+  box-shadow: 0px 0px 5px #ccc
+  padding: 10px
+  text-align: center
+  max-width: 400px
+  p
+    font: italic 14px Georgia, "Times New Roman", Times, serif
+    color: #222222
+    text-align: center
+    margin-bottom: 10px
+    padding-top: 10px
+
+.whatwd p
+  padding-bottom: 8px
+  font: 13px / 20px Georgia, "Times New Roman", Times, serif
+  color: #666
+
+.whtop
+  margin: 0
+  color: #3355aa !important
+  span
+    margin-top: 7px
+
+.whatwd h4, .announsmnt h4
+  border-bottom: 3px solid #eebe00
+  font-size: 15px
+  color: #666
+  line-height: 36px
+  padding-bottom: 5px
+  text-transform: uppercase
+  margin: 0
+  margin-bottom: 15px
+
+.whatwd h4 span
+  float: right
+
+.announsmnt h4 span
+  float: right
+  margin-top: 9px
+
+.whatwd h4 strong, .announsmnt h4 strong
+  float: left
+
+.margright
+  margin-right: 38px
+
+.announsmnt ul
+  margin: 0
+  padding: 0
+  list-style: none
+  li
+    font: italic 13px / 21px Georgia, "Times New Roman", Times, serif
+    color: #222
+    border-bottom: 1px solid #f0f0f0
+    padding: 13px 0 13px 0
+    margin: 0
+    &:first-child
+      padding: 0 0 13px 0
+    p strong
+      font-weight: normal
+      color: #333
+
+.viewmore
+  color: #3355aa
+  font: italic 13px Georgia, "Times New Roman", Times, serif
+  text-decoration: none
+  display: inline-block
+  padding: 10px 0 0 0
+
+.operate:hover
+  color: #666
+
+.announsmnt ul li p
+  padding: 8px 0 0 0
+  margin: 0
+  font: 10px Georgia, "Times New Roman", Times, serif
+  color: #888
+
+.Sectors, .making_difference
+  padding: 0px 0px 0px 0px
+  margin: 0 0 0 0
+
+.sectorsMap
+  background-color: #f4f5f6
+  padding-bottom: 30px
+
+.slider-wrap
+  padding: 0 0 40px 0
+  border-bottom: 1px solid #dbdcdd
+
+.Sectors h2
+  font-size: 28px
+  color: #444444
+  text-align: center
+  padding: 30px 0 30px 0
+  margin: 0
+  text-transform: uppercase
+  line-height: 36px
+  text-shadow: 0px 0px 1px #444444
+
+ul.worklist
+  margin: 0px 0px 30px 0px
+  padding: 0
+  display: inline-table
+  li
+    text-align: center
+    border-radius: 5px
+    -moz-border-radius: 5px
+    -webkit-border-radius: 5px
+    padding: 15px 5px 5px 5px
+    border: 1px solid #dcddde
+    background-color: #fff
+    float: left
+    box-shadow: 0px 0px 3px #ccc
+    text-align: center
+    margin-left: 15px
+    max-width: 164px
+    &:first-child
+      margin-left: 0px
+    span
+      display: inline-block
+      min-height: 50px
+      color: #3355aa
+      font: 13px Georgia, "Times New Roman", Times, serif
+      text-align: center
+      vertical-align: text-top
+    a
+      text-decoration: none
+      color: #3355aa
+      &:hover
+        text-decoration: none
+        color: #3355aa
+    img
+      display: block
+
+.sep
+  text-align: center
+  background: url(../images/sepbg_03.jpg) repeat-x center
+  width: 100%
+  display: inline-block
+  margin: 0px 0 40px 0
+  img
+    padding: 6px 0 0 0
+
+.making
+  padding: 0
+  text-align: center
+  text-shadow: 0px 0px 1px #444444
+  color: #444444
+  font: 24px / 36px "nevisbold"
+  text-transform: uppercase
+  letter-spacing: -1px
+  max-width: 720px
+  margin: 0 auto
+  text-align: center
+
+.wadiverse
+  max-width: 720px
+  margin: 0 auto
+  text-align: center
+
+.making
+  margin-bottom: 15px
+
+.wadiverse
+  text-align: center
+  font: 18px Georgia, "Times New Roman", Times, serif
+  color: #666666
+  margin-bottom: 30px
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.7)
+
+.map
+  text-align: center
+  width: 100%
+  height: auto
+  position: relative
+  margin: 0 0 0px 0
+
+.popover-content
+  p
+    font: italic 11px Georgia, "Times New Roman", Times, serif
+    color: #666666
+    margin: 0
+    width: 118px
+  span
+    float: right
+    margin: 0
+    padding: 0 0 0 10px
+
+#pointer1
+  position: absolute
+  left: 37%
+  top: 68%
+
+#pointer2
+  position: absolute
+  left: 51%
+  top: 62%
+
+#pointer3
+  position: absolute
+  left: 60%
+  top: 56%
+
+#pointer4
+  position: absolute
+  left: 67%
+  top: 61%
+
+#pointer5
+  position: absolute
+  left: 71%
+  top: 69%
+
+.backto-top
+  width: 62px
+  height: 20px
+  text-align: center
+  color: #3355aa
+  font: italic 13px / 21px Georgia, "Times New Roman", Times, serif
+  background-color: #fff
+  display: inline-block
+  padding: 5px 10px
+  border-top-left-radius: 5px
+  border-top-right-radius: 5px
+  float: right
+  margin: 0 0 0 0
+  cursor: pointer
+  box-shadow: 0px -2px 6px 0px #cccccc
+  span
+    width: 12px
+    height: 12px
+    margin: 0 5px 0 0
+    img
+      margin-top: -3px
+
+.footer
+  background-color: #f4f5f6
+
+.footerbg
+  background: url(../images/footerbg.jpg) repeat
+  padding: 20px 0px 20px 0px
+
+.footer-nav
+  padding: 0 0 18px 0
+  margin: 0 0 15px 0
+  background: url(../images/footersep.jpg) repeat-x bottom
+
+.sepfooter
+  background: url(../images/footersep.jpg) repeat-x bottom
+  padding-top: 0px
+  margin-bottom: 10px
+
+.footerleftnav
+  margin: 0
+  padding: 0
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+    li
+      display: inline
+      color: #aaaaaa
+      font: 14px / 20px Georgia, "Times New Roman", Times, serif
+
+.active-foot a
+  color: #fff !important
+
+.footerleftnav li a
+  color: #aaa
+  line-height: 20px
+  text-decoration: none
+  padding: 0px 5px 0px 5px
+
+.footerrightnav li a:hover, .footerleftnav li a:hover
+  color: #fff
+
+.footerrightnav
+  margin: 0
+  padding: 0
+  ul
+    margin: 0
+    padding: 0
+    list-style: none
+    li
+      display: inline
+      color: #666
+      font: 11px / 20px Georgia, "Times New Roman", Times, serif
+  li a
+    color: #aaa
+    line-height: 20px
+    text-decoration: none
+    padding: 0px 5px 0px 5px
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.6)
+
+.copyrighttxt
+  font: 11px / 18px Georgia, "Times New Roman", Times, serif
+  color: #888
+
+.socialicons
+  display: block
+  span
+    display: inline-block
+    font: 13px / 18px Georgia, "Times New Roman", Times, serif
+    color: #888
+  a
+    display: inline-block
+    width: 17px
+    height: 17px
+    text-decoration: none
+    margin: 0px 2px 0px 2px
+    opacity: 0.8
+    &:hover
+      opacity: 1
+
+.search
+  background-color: #214193
+  width: 146px !important
+  padding: 5px 10px 5px 10px !important
+  border: 1px solid #0f2356 !important
+  border-radius: 5px !important
+  -moz-border-radius: 5px !important
+  -webkit-border-radius: 5px !important
+  -webkit-box-shadow: inset 0px 0px 5px 1px #204091 !important
+  box-shadow: inset 0px 0px 5px 1px #204091 !important
+  height: 20px !important
+  margin: 0 !important
+
+.search-button
+  width: 38px !important
+  height: 32px !important
+  background: url(../images/sprite-icons.png) no-repeat #4d71cc
+  border: 1px solid #0f2356
+  border-radius: 5px
+  -moz-border-radius: 5px
+  -webkit-border-radius: 5px
+  background-position: -81px 6px
+  &:hover
+    background-color: #2d54b5
+
+.search:focus
+  width: 200px !important
+
+.navbar .btn-navbar
+  margin-right: 0px
+  margin-bottom: 5px
+
+input, textarea, select
+  outline: none
+  -webkit-transition: all 0.2s ease-in-out
+  transition: all 0.2s ease-in-out
+
+.search-height
+  height: 30px !important
+
+.display-block
+  display: block !important
+
+.display-none
+  display: none !important
+
+#slider
+  min-height: 264px
+  max-width: 400px
+  min-width: 100%
+  img
+    display: none
+    z-index: 40
+    width: 100%
+  .imgactive
+    display: block
+
+.right-arrow
+  float: right
+
+.left-arrow
+  float: left
+
+.arrow span:hover
+  background-color: #eebe00
+  color: #fff
+  cursor: pointer
+
+.slider-outer
+  position: absolute
+
+.mySliderOuter
+  max-width: 400px
+  margin: 0 auto
+  position: relative
+
+.mySlider
+  width: 100%
+  height: 240px
+  background: #000000
+  overflow: hidden
+  position: relative
+  div
+    position: relative
+    left: 0
+    top: 0
+  img
+    display: none
+    &.active
+      display: block
+
+.arrowBoxContainer a
+  font: 24px / 16px "nevisbold"
+  background: rgba(0, 0, 0, 0.4)
+  padding: 10px
+  border-radius: 52%
+  color: #ffffff
+  display: none
+
+.mySliderOuter:hover .arrowBoxContainer a
+  color: #FFFFFF
+  display: block
+
+.arrowBoxContainer
+  position: absolute
+  top: 46%
+  left: 0
+  right: 0
+  .prev
+    float: left
+  .next
+    float: right
+
+img
+  max-width: 100%
+
+@media (min-width: 768px) and (max-width: 979px)
+  .logo
+    a
+      background: url("../images/logo.jpg") no-repeat left left
+      height: 47px
+    width: 160px
+  .logorightnav li a
+    padding: 8px
+  .navigation li a
+    padding: 0 12px
+  .whatwd, .announsmnt
+    padding: 0
+  .slider-wrap
+    padding: 0 0 30px 0
+  .navigation-wrap
+    margin-bottom: 30px
+  .Sectors h2
+    padding: 20px 0
+  ul.worklist li span
+    font-size: 11px
+  .navigation-font li a
+    font-size: 12px
+    font-weight: normal
+  .sep
+    margin: 0 0 20px 0
+  .footerleftnav ul li
+    font-size: 13px
+  ul.worklist li
+    max-width: 122px
+    margin-left: 12px
+  .whatwd h4, .announsmnt h4
+    font-size: 12px
+  .whtop
+    letter-spacing: -1px
+  .announsmnt
+    h4
+      margin: 0 0 5px 0
+    ul li
+      padding: 2px 0 0
+      font-size: 12px
+      line-height: 18px
+      &:first-child
+        padding: 2px 0 0
+  .established
+    margin: 0
+  .whatwd h4
+    margin-bottom: 5px
+  .navbar-search .search-query
+    width: 100%
+    border-radius: 5px
+  .nav-collapse
+    .navbar-form, .navbar-search
+      border: none
+  .navbar .nav > li
+    background: transparent
+  .announsmnt ul li p
+    padding: 5px 0
+  .sliderout p
+    text-align: left
+  .whatwd p
+    padding: 0
+    font-size: 12px
+    line-height: 19px
+  #pointer1
+    left: 32%
+  #pointer3
+    left: 63%
+    top: 55%
+  #pointer4
+    left: 72%
+  #pointer5
+    left: 75%
+
+@media only screen and (max-width: 767px)
+  .header, .navigation-wrap, .sectorsMap, .footer
+    margin: 0 -20px 0 -20px
+  .navigation-font li a
+    font-weight: normal
+  .nav-collapse
+    .nav > li > a, .dropdown-menu a
+      font-weight: normal
+  .navbar-search .search-query
+    border-radius: 5px
+  .logo
+    width: 120px
+    padding: 0
+    margin: 0 auto
+    a
+      height: 50px
+      span
+        font: italic 10.71px "Times New Roman"
+        padding-top: 4px
+  .logorightnav
+    margin: 0 auto
+    text-align: center
+    max-width: 472px
+    display: block
+    height: 52px
+  .sliderout
+    margin: 0 auto
+    margin-bottom: 20px
+  .Sectors h2
+    padding: 20px 0
+    font-size: 22px
+  .sep
+    margin: 0 auto
+    margin-bottom: 20px
+  .making
+    font-size: 20px
+  .wadiverse
+    font-size: 14px
+  .Sectors .container, .making_difference .container
+    padding: 0 20px 0 20px
+  .whtop
+    letter-spacing: normal
+  .less-ipad
+    display: block
+  .large-ipad
+    display: none
+  .footerbg
+    padding: 20px
+  .footerleftnav
+    margin-bottom: 10px
+    width: 100%
+    text-align: center
+  .footerrightnav
+    width: 100%
+    text-align: center
+  .margin-bottom-20
+    margin-bottom: 20px
+  .announsmnt
+    height: auto
+  ul.worklist
+    margin: 0 auto
+    margin-bottom: 5px
+    li
+      &:first-child
+        margin-left: 15px
+        margin-bottom: 15px
+  .sectorsMap
+    padding-bottom: 20px
+  .backto-top
+    margin-right: 20px
+  .footerleftnav li a
+    padding: 0 4px
+  #pointer1
+    left: 33%
+  #pointer3
+    left: 64%
+    top: 55%
+  #pointer4
+    left: 73%
+  #pointer5
+    left: 76%
+
+@media only screen and (max-width: 640px)
+  .logo
+    padding: 0
+    margin: 0 auto
+  .logorightnav
+    margin: 0 auto
+    text-align: center
+    display: block
+    li
+      a
+        font-size: 13px
+        padding: 8px 0px
+      padding: 0 16px
+      span
+        display: none
+
+@media only screen and (max-width: 480px)
+  .logorightnav
+    li
+      padding: 0 7px
+    max-width: 432px
+  .logo
+    width: 80px
+    a
+      height: 40px
+  .row-fluid aside
+    margin-bottom: 20px
+  ul.worklist
+    margin: 0 auto
+    max-width: 176px
+    display: block
+    float: none
+    li
+      &:first-child
+        margin: 0 0 15px 0
+        max-width: 164px
+        padding: 15px 5px 5px
+        margin: 0 0 15px 0
+      span
+        font-size: 13px
+  .footerbg
+    padding: 20px
+  .footerleftnav
+    margin-bottom: 10px
