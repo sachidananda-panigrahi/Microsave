@@ -1,0 +1,285 @@
+<!doctype html>
+%head#www-sitename-com{"data-template-set" => "html5-reset"}
+  %meta{:charset => "utf-8"}
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+      %title Welcome to MicroSave | Market-led solutions for financial services
+      /[if IE]
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      %meta{:content => "MicroSave", :name => "title"}
+        %meta{:content => "MicroSave", :name => "description"}
+          / Google will often use this as its description of your page/site. Make it good.
+          %meta{:content => "MicroSave", :name => "google-site-verification"}
+            %meta{:content => "MicroSave", :name => "author"}
+              %meta{:content => "Copyright &copy; 2013 MicroSave. All Rights Reserved.", :name => "Copyright"}
+                %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0", :name => "viewport"}
+                  %link{:href => "images/favicon.ico", :rel => "shortcut icon"}
+                    /
+                      This is the traditional favicon.
+                      \- size: 16x16 or 32x32
+                      \- transparency is OK
+                    /
+                      <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+                      <link rel="stylesheet" href="css/bootstrap-responsive.css" type="text/css">
+                      <link rel="stylesheet" href="css/slideshow.css" type="text/css">
+                      <link rel="stylesheet" type="text/css" href="css/component.css" />
+                      <link rel="stylesheet" href="fonts/fonts.css" type="text/css">
+                    %link{:href => "css/production.min.css", :rel => "stylesheet", :type => "text/css"}
+%body
+  / Header section start
+  .cbp-af-header.shrinkHeaderParent
+    .cbp-af-inner.shrinkHeaderChild
+      %header.header.clearfix
+        .container
+          .logo
+            %a{:href => "index.html"}
+          .logorightnav
+            %ul.clearfix
+              %li.active
+                %a{:href => "javascript:void(0);", :title => "Home"}
+                  %span.home-icon>
+                  Home
+              %li
+                %a{:href => "javascript:void(0);", :title => "About"}
+                  %span.about-icon>
+                  About Us
+              %li
+                %a{:href => "javascript:void(0);", :title => "Blog"}
+                  %span.blog-icon>
+                  Blog
+              %li
+                %a{:href => "javascript:void(0);", :title => "Contact"}
+                  %span.contact-icon>
+                  Contact
+                  Us
+        / Header section End
+      %section.navigation-wrap
+        / Navigation strip
+        .navbar.less-ipad.blueBack
+          .navbar-inner
+            .container
+              %a.btn.btn-navbar{"data-target" => ".navbar-responsive-collapse", "data-toggle" => "collapse"}
+                %span.icon-bar
+                %span.icon-bar
+                %span.icon-bar
+              %a.brand{:href => "index.html"} MicroSave
+              .nav-collapse.collapse.navbar-responsive-collapse
+                %ul.nav.navigation-font
+                  %li.active
+                    %a{:href => "#"} Sectors we work in
+                  %li
+                    %a{:href => "#"} Services
+                  %li
+                    %a{:href => "#"} Clients
+                  %li
+                    %a{:href => "#"} Research &amp; Reports
+                %form.navbar-search.pull-right{:action => ""}
+                  %input.search-query.span3.search-height{:placeholder => "Search", :type => "text"}
+        .bluestrip.large-ipad.clearfix
+          .container
+            %nav.navigation.align-left
+              %ul.clearfix
+                %li
+                  %a{:href => "javascript:void(0);", :title => "sectors"} Sectors we work in
+                %li
+                  %a{:href => "javascript:void(0);", :title => "services"} Services
+                %li
+                  %a{:href => "javascript:void(0);", :title => "Clients"} Clients
+                %li
+                  %a{:href => "javascript:void(0);", :title => "research"} Research &amp; Reports
+            .searchout.align-right
+              %input.search{:name => "", :placeholder => "Search", :type => "text", :value => ""}
+                %input.search-button{:name => "", :type => "button", :value => ""}/
+        / Navigation strip End
+  / Content section start
+  .mainWrap.clearfix
+    %section.slider-wrap
+      .container
+        .row
+          .span6
+            %aside.sliderout
+              .cycle-slideshow{"data-cycle-fx" => "scrollHorz", "data-cycle-pager" => ".cycle-pager1", "data-cycle-tile-count" => "12", "data-cycle-tile-vertical" => "true", "data-cycle-timeout" => "3000"}
+                / empty element for pager links
+                .cycle-pager
+                %img{:alt => "", :src => "images/sliderimg.jpg"}/
+                %img{:alt => "", :src => "images/sliderimg1.jpg"}/
+                %img{:alt => "", :src => "images/sliderimg2.jpg"}/
+                %img{:alt => "", :src => "images/sliderimg3.jpg"}/
+                %img{:alt => "", :src => "images/sliderimg4.jpg"}/
+              %p
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                %br
+                  Proin ut tellus nulla, a commodo leo.
+              .cycle-pager1
+          .span3
+            %aside.whatwd
+              %h4.clearfix
+                %strong What we do?
+                %span.setting-ico
+              %p
+                MicroSave is a diversified development consultancy that works to better the lives of
+                low-income
+                people.
+              %p.established
+                Established in 1998 as a joint UNCDF/DFID project in East and Southern
+                Africa, today we have offices and staff in 24 countries around the world with headquarters
+                in
+                Lucknow, India.
+              %a.operate{:href => "javascript:void(0);"}
+                %h4.whtop.clearfix
+                  %strong Where we Operate?
+                  %span.marker-ico
+          .span3
+            %aside.announsmnt
+              %h4.clearfix
+                %strong Announcements
+                %span.mic-ico
+              %ul#ticker_02.ticker
+                %li
+                  1. Lorem ipsum dolor sit amet, contur adipiscing elit mi eleifend...
+                  %p
+                    By
+                    %strong Amol
+                    on 21July 2012
+                %li
+                  2. Lorem ipsum dolor sit amet, contur adipiscing elit mi eleifend...
+                  %p
+                    By
+                    %strong Amol
+                    on 21July 2012
+                %li
+                  3. Lorem ipsum dolor sit amet, contur adipiscing elit mi eleifend...
+                  %p
+                    By
+                    %strong Amol
+                    on 21July 2012
+              %a.viewmore{:href => "javascript:void(0);"} View More
+    %section.clearfix.sectorsMap
+      %aside.Sectors.clearfix
+        / gray content
+        .container
+          /
+            <div class="mySliderOuter">
+            <div class="mySlider">
+            <div class="clearfix">
+            <img src="images/sliderimg.jpg" class="active" alt=""/>
+            <img src="images/sliderimg1.jpg" alt=""/>
+            <img src="images/sliderimg2.jpg" alt=""/>
+            <img src="images/sliderimg3.jpg" alt=""/>
+            <img src="images/sliderimg4.jpg" alt=""/>
+            </div>
+
+            </div>
+            <div class="arrowBoxContainer">
+            <a href="javascript:void(0);" class="prev"><</a>
+            <a href="javascript:void(0);" class="next">></a>
+            </div>
+            </div>
+          %h2 Sectors we work in
+          %ul.worklist.clearfix
+            %li
+              %a{:href => "javascript:void(0);"}
+                %span Microfinance and Banking
+                %img{:alt => "", :src => "images/frt1.jpg", :title => ""}/
+            %li
+              %a{:href => "javascript:void(0);"}
+                %span E/M-Banking for Financial Inclusion
+                %img{:alt => "", :src => "images/frt2.jpg", :title => ""}/
+            %li
+              %a{:href => "javascript:void(0);"}
+                %span Private Sector Development
+                %img{:alt => "", :src => "images/frt3.jpg", :title => ""}/
+            %li
+              %a{:href => "javascript:void(0);"}
+                %span Small &amp; Medium Enterprise Financing
+                %img{:alt => "", :src => "images/frt4.jpg", :title => ""}/
+            %li
+              %a{:href => "javascript:void(0);"}
+                %span Responsible Finance
+                %img{:alt => "", :src => "images/frt5.jpg", :title => ""}/
+      %aside
+        .container
+          .sep
+            %img{:alt => "", :src => "images/bdrimg.jpg"}/
+      %aside.making_difference.clearfix
+        .container
+          %h3.making Making a difference, Across Borders & Nations
+          %p.wadiverse
+            We are a diverse development consultancy working in India, Kenya, the Philippines,
+            Papua New Guinea and Colombia
+          .map.clearfix
+            %img{:alt => "", :src => "images/map.png", :title => ""}
+              %a#pointer1{"data-content" => "<div><p>Projects <span>0000</span></p><p>Offices <span>0000</span></p><p>Staff Location <span>0000</span></p></div>", :href => "javascript:void(0);", :rel => "popover"}
+                %img{:alt => "", :src => "images/map-pointer.png"}/
+              %a#pointer2{"data-content" => "<div><p>Projects <span>0000</span></p><p>Offices <span>0000</span></p><p>Staff Location <span>0000</span></p></div>", :href => "javascript:void(0);", :rel => "popover"}
+                %img{:alt => "", :src => "images/map-pointer.png"}/
+              %a#pointer3{"data-content" => "<div><p>Projects <span>0000</span></p><p>Offices <span>0000</span></p><p>Staff Location <span>0000</span></p></div>", :href => "javascript:void(0);", :rel => "popover"}
+                %img{:alt => "", :src => "images/map-pointer.png"}/
+              %a#pointer4{"data-content" => "<div><p>Projects <span>0000</span></p><p>Offices <span>0000</span></p><p>Staff Location <span>0000</span></p></div>", "data-html" => "true", :href => "javascript:void(0);", :rel => "popover"}
+                %img{:alt => "", :src => "images/map-pointer.png"}/
+              %a#pointer5{"data-content" => "<div><p>Projects <span>0000</span></p><p>Offices <span>0000</span></p><p>Staff Location <span>0000</span></p></div>", :href => "javascript:void(0);", :rel => "popover"}
+                %img{:alt => "", :src => "images/map-pointer.png"}/
+  / Content section End
+  / Footer section start
+  .clearfix
+    .well-large
+      .alert-danger
+        .alert-info
+  %footer.footer.clearfix
+    .container
+      .backto-top
+        %span.go-top-ico>
+        Top
+    .footerbg
+      .container
+        .clearfix.footer-nav
+          %nav.footerleftnav.align-left
+            %ul
+              %li.active-foot
+                %a{:href => "#"} Home
+              %li |
+              %li
+                %a{:href => "#"} Services
+              %li |
+              %li
+                %a{:href => "#"} About
+              %li |
+              %li
+                %a{:href => "#"} Blog
+              %li |
+              %li
+                %a{:href => "#"} Contact
+          %nav.footerrightnav.align-right
+            %ul
+              %li
+                %a{:href => "#"} Terms of use
+              %li |
+              %li
+                %a{:href => "#"} Privacy
+              %li |
+              %li
+                %a{:href => "#"} Code of business conduct &amp; ethics
+              %li |
+              %li
+                %a{:href => "#"} Site map
+        .clearfix
+          .align-left.copyrighttxt MicroSave &copy; 2012
+          .align-right.socialicons.clearfix
+            %span Follow us
+            %a{:href => "javascript:void(0);"}
+              %span.facebook-ico
+            %a{:href => "javascript:void(0);"}
+              %span.twitt-ico
+            %a{:href => "javascript:void(0);"}
+              %span.linked-in-ico
+  / Footer section End
+  /
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min-1.10.3.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+    <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+  /
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+  %script{:src => "js/build/production.min.js", :type => "text/javascript"}

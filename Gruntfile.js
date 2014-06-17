@@ -2,6 +2,13 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+        haml: {                              // Task
+            dist: {                            // Target
+                files: {                         // Dictionary of files
+                    'index.html': 'index.haml'       // 'destination': 'source'
+                        }
+                  }
+              },
         concat: {
             dist: {
                 src: [
@@ -76,15 +83,20 @@ module.exports = function(grunt) {
             css: {
                 files: ['css/*.css'],
                 tasks: ['cssmin']
+            },
+            haml: {
+                files: ['*.haml'],
+                tasks: ['haml']
             }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-haml');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-    grunt.registerTask('default', ['concat','uglify','compass','cssmin','watch']);
+    grunt.registerTask('default', ['concat','uglify','compass','cssmin', 'haml','watch']);
 };

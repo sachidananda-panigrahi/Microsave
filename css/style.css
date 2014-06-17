@@ -1524,3 +1524,8 @@ img {
     margin-bottom: 10px;
   }
 }
+/* line 1002, ../sass/style.sass */
+.checkGrunt {
+  margin-bottom: 10px;
+  border: 1px solid red;
+}
