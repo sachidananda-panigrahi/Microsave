@@ -69,10 +69,10 @@ module.exports = function(grunt) {
         },
 
         watch: {
-            // gruntfile: {
-            //   files: 'Gruntfile.js',
-            //   tasks: ['notify:gruntChange'],
-            // },
+            gruntfile: {
+               files: 'Gruntfile.js',
+               tasks: ['notify:gruntChange'],
+            },
             scripts: {
                 files: ['js/*.js', 'js/libs/*.js'],
                 tasks: ['concat', 'uglify']
@@ -92,12 +92,12 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-haml');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-concat');
-    grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('grunt-contrib-haml');
 
-    grunt.registerTask('default', ['concat','uglify','compass','cssmin', 'haml','watch']);
+    grunt.registerTask('default', ['concat','uglify','cssmin','compass', 'haml','watch']);
 };

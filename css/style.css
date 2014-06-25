@@ -456,7 +456,7 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
   background: url(../images/navsep.jpg) no-repeat left center;
 }
 /* line 334, ../sass/style.sass */
-.navigation li a {
+.navigation ul li a {
   float: left;
   display: block;
   font: italic 15px/26px Georgia, "Times New Roman", Times, serif;
@@ -910,7 +910,7 @@ ul.worklist li img {
   font: 11px/20px Georgia, "Times New Roman", Times, serif;
 }
 /* line 659, ../sass/style.sass */
-.footerrightnav li a {
+.footerrightnav ul li a {
   color: #aaaaaa;
   line-height: 20px;
   text-decoration: none;
@@ -1528,4 +1528,36 @@ img {
 .checkGrunt {
   margin-bottom: 10px;
   border: 1px solid red;
+}
+
+/* line 1006, ../sass/style.sass */
+#sliderPaginate ul {
+  list-style: none;
+  margin: 0 auto;
+  display: table;
+}
+/* line 1010, ../sass/style.sass */
+#sliderPaginate ul li {
+  float: left;
+  margin-left: 15px;
+}
+/* line 1013, ../sass/style.sass */
+#sliderPaginate ul li a {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #ffa200;
+  display: block;
+  border: none;
+}
+
+/* line 1021, ../sass/style.sass */
+#sliderPaginate li:first-child {
+  margin: 0;
+}
+
+/* line 1023, ../sass/style.sass */
+#sliderPaginate li.active a {
+  background: #00b3ff;
+  border: none;
 }
