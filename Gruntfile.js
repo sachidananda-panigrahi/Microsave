@@ -5,8 +5,9 @@ module.exports = function(grunt) {
         haml: {                              // Task
             dist: {                            // Target
                 files: {                         // Dictionary of files
-                    'index.html': 'index.haml'       // 'destination': 'source'
-                        }
+                    'index.html': 'index.haml',       // 'destination': 'source'
+                    'tabsFormVal.html': 'tabsFormVal.haml'
+                }
                   }
               },
         concat: {
