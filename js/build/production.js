@@ -9588,6 +9588,11 @@ if ( typeof define === 'function' && define.amd ) {
 })( window );
 
 // JavaScript Document
+var page_height = $(window).height();
+var head_height = $(".header").height();
+var cont_height = $(".mainWrap").height();
+var foot_height = $(".footer").height();
+var tot_height = parseInt(head_height) + parseInt(cont_height) + parseInt(foot_height);
 
 function loop() {
     $('#pointer1,#pointer2,#pointer3,#pointer4,#pointer5')
@@ -9595,6 +9600,16 @@ function loop() {
         .animate({marginTop:0}, 1000, loop);
 
 }
+
+
+
+
+
+
+
+
+
+
 
 
 /* Plugin for Cycle2; Copyright (c) 2012 M. Alsup; v20130721 */
@@ -9630,49 +9645,7 @@ function loop() {
     }}
 })(jQuery);
 
-var imageHeight = $('.mySlider div img').height();
-var imageCount = $('.mySlider div img').length;
-var topAnimate = imageHeight * imageCount;
-$('.mySlider').css({"height":imageHeight});
-for(var i=0; i<imageCount; i++)
-{
-    var link= "link";
-    link= link+i;
-    $("#sliderPaginate ul").append("<li><a class='roundBtn' id='link' href='javascript:void(0)' rel=''></a></li>");
-    $("#link").attr('id',link);
 
-
-}
-i=0;
-$(".mySlider img").each(function(){
-
-    link= "link";
-    link= link+i;
-    $(this).addClass(link);
-    i++;
-})
-$("#sliderPaginate li:first-child").addClass("active");
-function mySlider() {
-    var $active = $('.mySlider img.active');
-    var $next = ($('.mySlider img.active').next().length > 0) ? $('.mySlider img.active').next() : $('.mySlider img:first');
-    var $activePn= $("#sliderPaginate li.active");
-    var $nextPn = ($('#sliderPaginate li.active').next().length > 0) ? $('#sliderPaginate li.active').next() : $('#sliderPaginate li:first');
-    $activePn.removeClass('active');
-    $active.removeClass('active');
-    $nextPn.addClass('active');
-    $next.addClass('active');
-
-}
-function rotatePrev() {
-    var $active = $('.mySlider img.active');
-    var $prev = ($('.mySlider img.active').prev().length > 0) ? $('.mySlider img.active').prev() : $('.mySlider img:last');
-    var $activePn= $("#sliderPaginate li.active");
-    var $prevPn = ($('#sliderPaginate li.active').prev().length > 0) ? $('#sliderPaginate li.active').prev() : $('#sliderPaginate li:last');
-    $activePn.removeClass('active');
-    $active.removeClass('active');
-    $prevPn.addClass('active');
-    $prev.addClass('active');
-}
 $(document).ready(function () {
 
 
@@ -9698,30 +9671,7 @@ $(document).ready(function () {
 // 		$('#ticker_02 li:first').slideUp( function () { $(this).appendTo($('#ticker_02')).slideDown(); });
 // 	}
 // 	setInterval(function(){ tick2 () }, 3000);
-    var ticker = mySlider;
-    var myTimer = window.setInterval(ticker, 4000);
-    $('.arrowBoxContainer .next').click(function () {
-        window.clearInterval(myTimer);
-        mySlider();
-        myTimer = window.setInterval(ticker, 4000);
 
-    });
-    $('.arrowBoxContainer .prev').click(function () {
-        window.clearInterval(myTimer);
-        rotatePrev();
-        myTimer = window.setInterval(ticker, 4000);
-
-    });
-    $("#sliderPaginate li a").on("click", function(){
-        $("#sliderPaginate li").removeClass("active");
-        $(this).parent().addClass("active");
-        window.clearInterval(myTimer);
-        var getId= $(this).attr("id");
-        $(".mySlider img").removeClass("active");
-        $("."+getId).addClass("active");
-        myTimer = window.setInterval(ticker, 4000);
-
-    })
 
 
     loop();
@@ -9958,11 +9908,7 @@ $(document).ready(function () {
 //			}
 
 
-    var page_height = $(window).height();
-    var head_height = $(".header").height();
-    var cont_height = $(".mainWrap").height();
-    var foot_height = $(".footer").height();
-    var tot_height = parseInt(head_height) + parseInt(cont_height) + parseInt(foot_height);
+
     if (tot_height < page_height) {
         var margin_height = parseInt(page_height) - parseInt(tot_height);
         var margin_height = parseInt(cont_height) + parseInt(margin_height) - 30;
@@ -9997,6 +9943,82 @@ $(document).ready(function () {
 
 
     });
+
+    /* ==========================================
+     Custom slider Plugin
+     =============================================*/
+
+    var imageCount = $('.mySlider img').length;
+    $(".mySliderOuter").css({"height":page_height});
+    for(var i=0; i<imageCount; i++)
+    {
+        var link= "link";
+        link= link+i;
+        $("#sliderPaginate ul").append("<li><a class='roundBtn' id='link' href='javascript:void(0)' rel=''></a></li>");
+        $("#link").attr('id',link);
+
+
+    }
+    i=0;
+    $(".mySlider img").each(function(){
+
+        link= "link";
+        link= link+i;
+        $(this).addClass(link);
+        i++;
+    });
+    $("#sliderPaginate li:first-child").addClass("active");
+    function mySlider() {
+        var $active = $('.mySlider img.active');
+        var $next = ($('.mySlider img.active').next().length > 0) ? $('.mySlider img.active').next() : $('.mySlider img:first');
+        var $activePn= $("#sliderPaginate li.active");
+        var $nextPn = ($('#sliderPaginate li.active').next().length > 0) ? $('#sliderPaginate li.active').next() : $('#sliderPaginate li:first');
+        $activePn.removeClass('active');
+        $active.removeClass('active');
+        $nextPn.addClass('active');
+        $next.addClass('active');
+
+    }
+    function rotatePrev() {
+        var $active = $('.mySlider img.active');
+        var $prev = ($('.mySlider img.active').prev().length > 0) ? $('.mySlider img.active').prev() : $('.mySlider img:last');
+        var $activePn= $("#sliderPaginate li.active");
+        var $prevPn = ($('#sliderPaginate li.active').prev().length > 0) ? $('#sliderPaginate li.active').prev() : $('#sliderPaginate li:last');
+        $activePn.removeClass('active');
+        $active.removeClass('active');
+        $prevPn.addClass('active');
+        $prev.addClass('active');
+    }
+    var ticker = mySlider;
+    var myTimer = window.setInterval(ticker, 4000);
+    $('.arrowBoxContainer .next').click(function () {
+        window.clearInterval(myTimer);
+        mySlider();
+        myTimer = window.setInterval(ticker, 4000);
+
+    });
+    $('.arrowBoxContainer .prev').click(function () {
+        window.clearInterval(myTimer);
+        rotatePrev();
+        myTimer = window.setInterval(ticker, 4000);
+
+    });
+    $("#sliderPaginate li a").on("click", function(){
+        $("#sliderPaginate li").removeClass("active");
+        $(this).parent().addClass("active");
+        window.clearInterval(myTimer);
+        var getId= $(this).attr("id");
+        $(".mySlider img").removeClass("active");
+        $("."+getId).addClass("active");
+        myTimer = window.setInterval(ticker, 4000);
+
+    });
+    $(".mySliderOuter").hover(function(){
+        $(".arrowBoxContainer a").show()
+    },
+    function(){
+        $(".arrowBoxContainer a").hide()
+    })
 
 
 

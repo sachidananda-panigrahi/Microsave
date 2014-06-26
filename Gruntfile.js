@@ -6,7 +6,8 @@ module.exports = function(grunt) {
             dist: {                            // Target
                 files: {                         // Dictionary of files
                     'index.html': 'index.haml',       // 'destination': 'source'
-                    'tabsFormVal.html': 'tabsFormVal.haml'
+                    'tabsFormVal.html': 'tabsFormVal.haml',
+                    'slider.html': 'slider.haml'
                 }
                   }
               },

@@ -754,47 +754,7 @@ input, textarea, select
 .slider-outer
   position: absolute
 
-.mySliderOuter
-  max-width: 400px
-  margin: 0 auto
-  position: relative
 
-.mySlider
-  width: 100%
-  height: 240px
-  background: #000000
-  overflow: hidden
-  position: relative
-  div
-    position: relative
-    left: 0
-    top: 0
-  img
-    display: none
-    &.active
-      display: block
-
-.arrowBoxContainer a
-  font: 24px / 16px "nevisbold"
-  background: rgba(0, 0, 0, 0.4)
-  padding: 10px
-  border-radius: 52%
-  color: #ffffff
-  display: none
-
-.mySliderOuter:hover .arrowBoxContainer a
-  color: #FFFFFF
-  display: block
-
-.arrowBoxContainer
-  position: absolute
-  top: 46%
-  left: 0
-  right: 0
-  .prev
-    float: left
-  .next
-    float: right
 
 img
   max-width: 100%
@@ -1002,7 +962,49 @@ img
 .checkGrunt
   margin-bottom: 10px
   border: 1px solid red
+//====================Custom slider Plugin
+.mySliderOuter
+  width: 100%
+  position: relative
+  overflow: hidden
+
+.mySlider
+  width: 100%
+  background: #000000
+  position: relative
+  img
+    display: none
+    &.active
+      display: block
+
+.arrowBoxContainer a
+  background: url("../images/arrows.png") no-repeat
+  display: block
+  height: 128px
+  width: 70px
+  display: none
+  background-position: 0px 0px
+
+.mySliderOuter:hover .arrowBoxContainer a
+  display: block
+
+.arrowBoxContainer
+  position: absolute
+  top: 50%
+  left: 0
+  right: 0
+  margin-top: -64px
+  .prev
+    float: left
+    background-position: 3px -3px
+  .next
+    float: right
+    background-position: -66px -3px
 #sliderPaginate
+  position: absolute
+  bottom: 2%
+  left: 0
+  right: 0
   ul
     list-style: none
     margin: 0 auto
@@ -1011,15 +1013,15 @@ img
       float: left
       margin-left: 15px
       a
-        height: 15px
-        width: 15px
+        height: 13px
+        width: 13px
         border-radius: 50%
         background: #ffa200
         display: block
-        border: none
+        border: 1px solid #ffa200
 
 #sliderPaginate li:first-child
   margin: 0
 #sliderPaginate li.active a
   background: #00b3ff
-  border: none
+  border: 1px solid #ffffff
