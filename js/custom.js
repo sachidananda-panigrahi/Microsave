@@ -358,9 +358,15 @@ $(document).ready(function () {
     /* ==========================================
      Custom slider Plugin
      =============================================*/
+function websSlider(){
+    return{
+        timeOut: 3,         //in second
+        sliderHeight: 100,  //In Percentage
+        sliderWidth: 100
+    }
 
     var imageCount = $('.mySlider img').length;
-    $(".mySliderOuter").css({"height":page_height});
+    $(".websSliderOuter").css({"height":page_height});
     for(var i=0; i<imageCount; i++)
     {
         var link= "link";
@@ -425,11 +431,13 @@ $(document).ready(function () {
 
     });
     $(".mySliderOuter").hover(function(){
-        $(".arrowBoxContainer a").show()
-    },
-    function(){
-        $(".arrowBoxContainer a").hide()
-    })
+            $(".arrowBoxContainer a").show()
+        },
+        function(){
+            $(".arrowBoxContainer a").hide()
+        })
+
+}
 
 
 

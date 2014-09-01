@@ -7,7 +7,8 @@ module.exports = function(grunt) {
                 files: {                         // Dictionary of files
                     'index.html': 'index.haml',       // 'destination': 'source'
                     'tabsFormVal.html': 'tabsFormVal.haml',
-                    'slider.html': 'slider.haml'
+                    'slider.html': 'slider.haml',
+                    'loader.html': 'loader.haml'
                 }
                   }
               },
@@ -57,7 +58,7 @@ module.exports = function(grunt) {
                     banner: '/* My minified css file */'
                 },
                 files: {
-                    'css/production.min.css': [
+                    'prod_css/production.min.css': [
                         'css/bootstrap.css',
                         'css/bootstrap-responsive.css',
                         'css/component.css',
