@@ -17,12 +17,14 @@ module.exports = function(grunt) {
                 src: [
                     'js/jquery-1.10.2.min.js',
                     'js/jquery-ui.min-1.10.3.js',
+                    'js/angular.min.js',
                     'js/jquery.carouFredSel-6.2.1-packed.js',
                     'js/jquery.cycle2.min.js',
                     'js/modernizr-2.6.2.min.js',
                     'js/bootstrap.js',
                     'js/classie.js',
-                    'js/custom.js'
+                    'js/custom.js',
+                    'js/app.js'
                 ],
                 dest: 'js/build/production.js',
                 nonull: true
