@@ -28,7 +28,7 @@
                 %li.active
                   %a{:href => "javascript:void(0);", :title => "Home"}
                     %span.home-icon>
-                    {{link.linkName.[0]}}
+                    {{link.linkName[0]}}
                 %li
                   %a{:href => "javascript:void(0);", :title => "About"}
                     %span.about-icon>
@@ -87,11 +87,10 @@
           .row
             .span6
               %aside.sliderout{"ng-controller"=>"sliderController as image"}
-                .cycle-slideshow{"data-cycle-slides" => ".sliderImages","data-cycle-fx" => "scrollHorz", "data-cycle-pager" => ".cycle-pager1", "data-cycle-tile-count" => "12", "data-cycle-tile-vertical" => "true", "data-cycle-timeout" => "3000"}
+                .cycle-slideshow{"data-cycle-fx" => "scrollHorz", "data-cycle-pager" => ".cycle-pager1", "data-cycle-tile-count" => "12", "data-cycle-tile-vertical" => "true", "data-cycle-timeout" => "3000"}
                   / empty element for pager links
                   .cycle-pager
-                  .sliderImages{ "ng-repeat"=>"sliderImages in image.sliderImages"}
-                    %img{"ng-src" => "{{sliderImages}}",:alt => ""}/
+                  %img{"ng-repeat"=>"sliderImages in image.sliderImages","ng-src" => "{{sliderImages}}",:alt => ""}/
 
                 %p
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.

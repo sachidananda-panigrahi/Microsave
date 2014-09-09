@@ -29,7 +29,7 @@
             <div class='logorightnav'>
               <ul class='clearfix'>
                 <li class='active'>
-                  <a href='javascript:void(0);' title='Home'><span class='home-icon'></span>{{link.linkName.[0]}}
+                  <a href='javascript:void(0);' title='Home'><span class='home-icon'></span>{{link.linkName[0]}}
                   </a>
                 </li>
                 <li>
@@ -118,12 +118,10 @@
           <div class='row'>
             <div class='span6'>
               <aside class='sliderout' ng-controller='sliderController as image'>
-                <div class='cycle-slideshow' data-cycle-fx='scrollHorz' data-cycle-pager='.cycle-pager1' data-cycle-slides='.sliderImages' data-cycle-tile-count='12' data-cycle-tile-vertical='true' data-cycle-timeout='3000'>
+                <div class='cycle-slideshow' data-cycle-fx='scrollHorz' data-cycle-pager='.cycle-pager1' data-cycle-tile-count='12' data-cycle-tile-vertical='true' data-cycle-timeout='3000'>
                   <!-- empty element for pager links -->
                   <div class='cycle-pager'></div>
-                  <div class='sliderImages' ng-repeat='sliderImages in image.sliderImages'>
-                    <img alt='' ng-src='{{sliderImages}}'>
-                  </div>
+                  <img alt='' ng-repeat='sliderImages in image.sliderImages' ng-src='{{sliderImages}}'>
                 </div>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.

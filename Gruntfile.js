@@ -75,7 +75,7 @@ module.exports = function(grunt) {
         watch: {
             gruntfile: {
                files: 'Gruntfile.js',
-               tasks: ['notify:gruntChange'],
+               tasks: ['notify:gruntChange']
             },
             scripts: {
                 files: ['js/*.js', 'js/libs/*.js'],

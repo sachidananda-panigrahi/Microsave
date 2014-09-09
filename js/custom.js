@@ -12,17 +12,6 @@ function loop() {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* Plugin for Cycle2; Copyright (c) 2012 M. Alsup; v20130721 */
 (function (e) {
     "use strict";
@@ -60,7 +49,7 @@ function loop() {
 $(document).ready(function () {
 
 
-
+websSlider();
 
 //	Responsive layout, resizing the items
     // $('#foo4').carouFredSel({
@@ -359,11 +348,11 @@ $(document).ready(function () {
      Custom slider Plugin
      =============================================*/
 function websSlider(){
-    return{
+    /*return{
         timeOut: 3,         //in second
         sliderHeight: 100,  //In Percentage
         sliderWidth: 100
-    }
+    }*/
 
     var imageCount = $('.mySlider img').length;
     $(".websSliderOuter").css({"height":page_height});

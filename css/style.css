@@ -1,6 +1,6 @@
-/* line 42, icons/*.png */
+/* line 42, ../images/icons/*.png */
 .icons-sprite {
-  background: url('/images/icons-s314b5750cc.png') no-repeat;
+  background: url('/images/../images/icons-s0bc7a678f9.png') no-repeat;
 }
 
 /* line 5, ../sass/style.sass */
@@ -81,7 +81,7 @@ mark {
 .home-icon, .about-icon, .blog-icon, .contact-icon {
   width: 14px;
   height: 12px;
-  background: url("images/icons/sprite-icons.png") no-repeat center;
+  background: url("../images/icons/sprite-icons.png") no-repeat center;
 }
 
 /* line 58, ../sass/style.sass */
@@ -106,12 +106,12 @@ mark {
 
 /* line 70, ../sass/style.sass */
 .setting-ico, .marker-ico, .mic-ico, .go-top-ico, .facebook-ico, .twitt-ico, .linked-in-ico {
-  background: url("sprite-icons.png") center no-repeat;
+  background: url("../images/icons/sprite-icons.png") center no-repeat;
 }
 
 /* line 73, ../sass/style.sass */
 .setting-ico {
-  background: url("sprite-icons.png") center no-repeat;
+  background: url("../images/icons/sprite-icons.png") center no-repeat;
   width: 32px;
   height: 27px;
   background-position: 0px -29px;
@@ -965,7 +965,7 @@ ul.worklist li img {
 .search-button {
   width: 38px !important;
   height: 32px !important;
-  background: url(/images/sprite-icons.png) no-repeat #4d71cc;
+  background: url(../images/icons/sprite-icons.png) no-repeat #4d71cc;
   border: 1px solid #0f2356;
   border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1494,16 +1494,15 @@ img {
   display: block;
   height: 128px;
   width: 70px;
-  display: none;
   background-position: 0px 0px;
 }
 
-/* line 986, ../sass/style.sass */
+/* line 985, ../sass/style.sass */
 .mySliderOuter:hover .arrowBoxContainer a {
   display: block;
 }
 
-/* line 989, ../sass/style.sass */
+/* line 988, ../sass/style.sass */
 .arrowBoxContainer {
   position: absolute;
   top: 50%;
@@ -1511,36 +1510,36 @@ img {
   right: 0;
   margin-top: -64px;
 }
-/* line 995, ../sass/style.sass */
+/* line 994, ../sass/style.sass */
 .arrowBoxContainer .prev {
   float: left;
   background-position: 3px -3px;
 }
-/* line 998, ../sass/style.sass */
+/* line 997, ../sass/style.sass */
 .arrowBoxContainer .next {
   float: right;
   background-position: -66px -3px;
 }
 
-/* line 1001, ../sass/style.sass */
+/* line 1000, ../sass/style.sass */
 #sliderPaginate {
   position: absolute;
   bottom: 2%;
   left: 0;
   right: 0;
 }
-/* line 1006, ../sass/style.sass */
+/* line 1005, ../sass/style.sass */
 #sliderPaginate ul {
   list-style: none;
   margin: 0 auto;
   display: table;
 }
-/* line 1010, ../sass/style.sass */
+/* line 1009, ../sass/style.sass */
 #sliderPaginate ul li {
   float: left;
   margin-left: 15px;
 }
-/* line 1013, ../sass/style.sass */
+/* line 1012, ../sass/style.sass */
 #sliderPaginate ul li a {
   height: 13px;
   width: 13px;
@@ -1550,12 +1549,12 @@ img {
   border: 1px solid #ffa200;
 }
 
-/* line 1021, ../sass/style.sass */
+/* line 1020, ../sass/style.sass */
 #sliderPaginate li:first-child {
   margin: 0;
 }
 
-/* line 1023, ../sass/style.sass */
+/* line 1022, ../sass/style.sass */
 #sliderPaginate li.active a {
   background: #00b3ff;
   border: 1px solid white;
