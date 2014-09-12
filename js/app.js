@@ -19,5 +19,4 @@
     app.controller('sliderController',function(){
        this.sliderImages= data.images.slider;
     });
-
 })();
