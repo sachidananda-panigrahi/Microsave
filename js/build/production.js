@@ -10250,6 +10250,7 @@ function websSlider(){
         description: 'dksajd jdkajdsjd dsajd'
 
     }
+
     var app = angular.module('microSave',[]);
     app.controller('navLinkController',function(){
         this.linkName= data.navigationLinkNames;
@@ -10260,5 +10261,4 @@ function websSlider(){
     app.controller('sliderController',function(){
        this.sliderImages= data.images.slider;
     });
-
 })();

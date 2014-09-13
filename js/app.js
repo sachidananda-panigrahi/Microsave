@@ -9,6 +9,7 @@
         description: 'dksajd jdkajdsjd dsajd'
 
     }
+
     var app = angular.module('microSave',[]);
     app.controller('navLinkController',function(){
         this.linkName= data.navigationLinkNames;
@@ -19,5 +20,4 @@
     app.controller('sliderController',function(){
        this.sliderImages= data.images.slider;
     });
-
 })();

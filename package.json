@@ -2,6 +2,10 @@
   "name": "Microsave",
   "version": "0.1.0",
   "devDependencies": {
+    "better-js-class": "^0.1.3",
+    "connect-mysql": "^2.1.1",
+    "cps": "^1.0.0",
+    "express": "^4.9.0",
     "grunt": "^0.4.5",
     "grunt-contrib-coffee": "^0.10.1",
     "grunt-contrib-compass": "^0.7.2",
@@ -13,6 +17,11 @@
     "grunt-contrib-sass": "~0.7.2",
     "grunt-contrib-uglify": "^0.4.0",
     "grunt-contrib-watch": "^0.6.0",
-    "grunt-sass": "~0.10.0"
+    "grunt-sass": "~0.10.0",
+    "mysql": "git://github.com/felixge/node-mysql",
+    "mysql2": "^0.12.5",
+    "node-mysql": "^0.4.0",
+    "requirejs": "^2.1.15",
+    "underscore": "^1.7.0"
   }
 }
