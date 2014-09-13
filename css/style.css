@@ -997,7 +997,7 @@ input, textarea, select {
 
 /* line 721, ../sass/style.sass */
 .search-height {
-  height: 30px !important;
+  height: 30px;
 }
 
 /* line 724, ../sass/style.sass */
