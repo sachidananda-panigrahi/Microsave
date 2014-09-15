@@ -23,7 +23,6 @@
 */
 
 
-/*
 var http = require('http');
 var mysql = require('mysql');
 // Create a connection to MySql Server and Database
@@ -59,12 +58,15 @@ http.createServer(function(req, res){
         connection.end();
     });
 // The server will be listen on port 8080
-}).listen(8080);*/
+}).listen(8080);
 
+/*
 
+*/
 /**
  * Module dependencies.
- */
+ *//*
+
 var express = require('express');
 var routes = require('./routes');
 var http = require('http');
@@ -94,10 +96,12 @@ if ('development' == app.get('env')) {
     app.use(express.errorHandler());
 }
 
+*/
 /*------------------------------------------
  connection peer, register as middleware
  type koneksi : single,pool and request
- -------------------------------------------*/
+ -------------------------------------------*//*
+
 app.use(
 
     connection(mysql,{
@@ -132,4 +136,4 @@ app.use(app.router);
 http.createServer(app).listen(app.get('port'), function(){
 
     console.log('Express server listening on port ' + app.get('port'));
-});
+});*/
