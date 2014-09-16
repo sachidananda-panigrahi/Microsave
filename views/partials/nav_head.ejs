@@ -1,0 +1,93 @@
+<!-- Header section start -->
+<div class='cbp-af-header shrinkHeaderParent'>
+    <div class='cbp-af-inner shrinkHeaderChild'>
+        <header class='header clearfix' ng-controller='navLinkController as link'>
+            <div class='container'>
+                <div class='logo'>
+                    <a href='index.html'></a>
+                </div>
+                <div class='logorightnav'>
+                    <ul class='clearfix'>
+                        <li class='active'>
+                            <a href='javascript:void(0);' title='Home'><span class='home-icon'></span>{{link.linkName[0]}}
+                            </a>
+                        </li>
+                        <li>
+                            <a href='javascript:void(0);' title='About'><span class='about-icon'></span>{{link.linkName[1]}}
+                            </a>
+                        </li>
+                        <li>
+                            <a href='javascript:void(0);' title='Blog'><span class='blog-icon'></span>{{link.linkName[2]}}
+                            </a>
+                        </li>
+                        <li>
+                            <a href='javascript:void(0);' title='Contact'><span class='contact-icon'></span>{{link.linkName[3]}}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Header section End -->
+        </header>
+        <section class='navigation-wrap' ng-controller='searchLinkController as link'>
+            <!-- Navigation strip -->
+            <div class='navbar less-ipad blueBack'>
+                <div class='navbar-inner'>
+                    <div class='container'>
+                        <a class='btn btn-navbar' data-target='.navbar-responsive-collapse' data-toggle='collapse'>
+                            <span class='icon-bar'></span>
+                            <span class='icon-bar'></span>
+                            <span class='icon-bar'></span>
+                        </a>
+                        <a class='brand' href='index.html'>MicroSave</a>
+                        <div class='nav-collapse collapse navbar-responsive-collapse'>
+                            <ul class='nav navigation-font'>
+                                <li class='active'>
+                                    <a href='#'>{{link.searchLink[0]}}</a>
+                                </li>
+                                <li>
+                                    <a href='#'>{{link.searchLink[1]}}</a>
+                                </li>
+                                <li>
+                                    <a href='#'>{{link.searchLink[2]}}</a>
+                                </li>
+                                <li>
+                                    <a href='#'>{{link.searchLink[3]}}</a>
+                                </li>
+                            </ul>
+                            <form action='' class='navbar-search pull-right'>
+                                <input class='search-query span3 search-height' placeholder='Search' type='text'>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='bluestrip large-ipad clearfix'>
+                <div class='container'>
+                    <nav class='navigation align-left'>
+                        <ul class='clearfix'>
+                            <li>
+                                <a href='javascript:void(0);' title='sectors'>{{link.searchLink[0]}}</a>
+                            </li>
+                            <li>
+                                <a href='javascript:void(0);' title='services'>{{link.searchLink[1]}}</a>
+                            </li>
+                            <li>
+                                <a href='javascript:void(0);' title='Clients'>{{link.searchLink[2]}}</a>
+                            </li>
+                            <li>
+                                <a href='javascript:void(0);' title='research'>{{link.searchLink[3]}}</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class='searchout align-right'>
+                        <input class='search' name='' placeholder='Search' type='text' value=''>
+                        <input class='search-button' name='' type='button' value=''>
+                        </input>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation strip End -->
+        </section>
+    </div>
+</div>

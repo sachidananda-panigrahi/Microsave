@@ -1,6 +1,6 @@
 /* line 42, icons/*.png */
 .icons-sprite {
-  background: url('/images/icons-s314b5750cc.png') no-repeat;
+  background: url('/assets/images/images/icons-s314b5750cc.png') no-repeat;
 }
 
 /* line 5, ../sass/style.sass */
@@ -965,7 +965,7 @@ ul.worklist li img {
 .search-button {
   width: 38px !important;
   height: 32px !important;
-  background: url(/images/sprite-icons.png) no-repeat #4d71cc;
+  background: url(/assets/images/sprite-icons.png) no-repeat #4d71cc;
   border: 1px solid #0f2356;
   border-radius: 5px;
   -moz-border-radius: 5px;
