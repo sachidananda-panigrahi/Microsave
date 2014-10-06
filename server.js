@@ -9,10 +9,10 @@ app.set('view options',{
     close: '%>'
 });
 app.get('/', function(req,res){
-   res.render('pages/index');
+   res.render('pages/login');
 });
 app.get('/login', function(req,res){
-    res.render('pages/login');
+    res.render('pages/index');
 });
 console.log('server is running on 8080. ctrl + c to shutdown');
 app.listen(8080);
