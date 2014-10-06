@@ -12,17 +12,6 @@ function loop() {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* Plugin for Cycle2; Copyright (c) 2012 M. Alsup; v20130721 */
 (function (e) {
     "use strict";
@@ -56,6 +45,7 @@ function loop() {
     }}
 })(jQuery);
 
+//Validate Login Screen
 
 $(document).ready(function () {
 

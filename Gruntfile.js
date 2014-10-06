@@ -51,7 +51,7 @@ module.exports = function(grunt) {
                     banner: '/* My minified css file */'
                 },
                 files: {
-                    'prod_css/production.min.css': [
+                    'assets/prod_css/production.min.css': [
                         'assets/css/bootstrap.css',
                         'assets/css/bootstrap-responsive.css',
                         'assets/css/component.css',
@@ -89,5 +89,5 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-compass');
 
-    grunt.registerTask('default', ['concat','uglify','cssmin','compass', 'haml','watch']);
+    grunt.registerTask('default', ['compass','concat','uglify','cssmin','watch']);
 };

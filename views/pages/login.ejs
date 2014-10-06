@@ -1,5 +1,25 @@
 <%include ../partials/header.ejs%>
-
+<section class="login">
+    <div class="loginContainer">
+        <h3>Log In To Your Account</h3>
+        <form name="frm">
+            <div class="email">
+                <input id="Email" name="email" type="email" placeholder="Email" value="" spellcheck="false" ng-model="user.email" class="" required>
+                <span class="error" ng-show="frm.email.$dirty && frm.email.$error.required" >Email is Required!!!</span>
+                <span class="error" ng-show="frm.email.$dirty && frm.email.$error.email" >Not an Email !!!</span>
+            </div>
+            <div class="password">
+                <input id="Passwd" name="passwd" type="password" placeholder="Password" class="" ng-model="user.passwd" ng-minlength="5" ng-minlength="10" required>
+                <span class="error" ng-show="frm.passwd.$dirty && frm.passwd.$error.required">Required!!!</span>
+                <span class="error" ng-show="frm.passwd.$dirty && frm.passwd.$error.minlength">too short!!!</span>
+                <span class="error" ng-show="frm.passwd.$dirty && frm.passwd.$error.maxlength">too long!!!</span>
+            </div>
+            <div class="signInBtnCont">
+                <button ng-disabled="frm.$invalid" type="submit" class="btn btn-block btn-large btn-primary">Log in</button>
+            </div>
+        </form>
+    </div>
+</section>
 
 <script src='js/build/production.min.js' type='text/javascript'></script>
 </body>

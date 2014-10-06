@@ -14,4 +14,5 @@ app.get('/', function(req,res){
 app.get('/login', function(req,res){
     res.render('pages/login');
 });
+console.log('server is running on 8080. ctrl + c to shutdown');
 app.listen(8080);

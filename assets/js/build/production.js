@@ -9817,17 +9817,6 @@ function loop() {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* Plugin for Cycle2; Copyright (c) 2012 M. Alsup; v20130721 */
 (function (e) {
     "use strict";
@@ -9861,6 +9850,7 @@ function loop() {
     }}
 })(jQuery);
 
+//Validate Login Screen
 
 $(document).ready(function () {
 
@@ -10259,17 +10249,16 @@ function websSlider(){
         },
         price: 4.5,
         description: 'dksajd jdkajdsjd dsajd'
-
     }
     var app = angular.module('microSave',[]);
     app.controller('navLinkController',function(){
         this.linkName= data.navigationLinkNames;
     });
     app.controller('searchLinkController',function(){
-       this.searchLink= data.searchNavigation;
+        this.searchLink= data.searchNavigation;
     });
     app.controller('sliderController',function(){
-       this.sliderImages= data.images.slider;
+        this.sliderImages= data.images.slider;
     });
 
 })();

@@ -6,18 +6,22 @@
             slider:['images/sliderimg.jpg','images/sliderimg1.jpg','images/sliderimg2.jpg','images/sliderimg3.jpg','images/sliderimg4.jpg']
         },
         price: 4.5,
-        description: 'dksajd jdkajdsjd dsajd'
-
+        description: 'dksajd jdkajdsjd dsajd',
+        email: 'sachin@webonise.com',
+        password: 'sachin123'
     }
     var app = angular.module('microSave',[]);
     app.controller('navLinkController',function(){
         this.linkName= data.navigationLinkNames;
     });
     app.controller('searchLinkController',function(){
-       this.searchLink= data.searchNavigation;
+        this.searchLink= data.searchNavigation;
     });
     app.controller('sliderController',function(){
-       this.sliderImages= data.images.slider;
+        this.sliderImages= data.images.slider;
+    });
+    app.controller('formController',function(){
+        
     });
 
 })();

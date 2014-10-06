@@ -1,7 +1,8 @@
 //$icons-spacing:20px
-@import "compass/utilities/sprites"
-@import "icons/*.png"
-
+//@import "compass/utilities/sprites"
+//@import "icons/*.png"
+body, html
+  height: 100%
 ul
   list-style: none
 
@@ -1023,3 +1024,36 @@ img
 #sliderPaginate li.active a
   background: #00b3ff
   border: 1px solid #ffffff
+// Login Screen
+.login
+  width: 100%
+  height: 100%
+  position: relative
+  box-sizing: border-box
+  background: url("../images/wallpaper/30245.jpg") no-repeat center
+  background-size: cover
+  overflow: hidden
+.loginContainer
+  width: 320px
+  height: 290px
+  background: url("../images/wallpaper/18478-hd-color-background-wallpaper.jpg") no-repeat center
+  background-size: cover
+  position: absolute
+  top: 50%
+  left: 50%
+  margin: -145px 0 0 -160px
+  box-sizing: border-box
+  padding: 20px
+  .error
+    color: #ff3300
+  h3
+    color: #FFFFFF
+  form
+    margin: 0
+    padding: 0
+    input
+      background: none
+      width: 100%
+      box-sizing: border-box
+      height: 40px
+      margin-bottom: 15px
