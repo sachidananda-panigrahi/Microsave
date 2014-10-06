@@ -10271,5 +10271,8 @@ function websSlider(){
     app.controller('sliderController',function(){
        this.sliderImages= data.images.slider;
     });
+    app.controller('articleController',function(){
+       this.article= data.description;
+    });
 
 })();

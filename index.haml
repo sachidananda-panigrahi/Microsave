@@ -28,7 +28,7 @@
                 %li.active
                   %a{:href => "javascript:void(0);", :title => "Home"}
                     %span.home-icon>
-                    {{link.linkName.[0]}}
+                    {{link.linkName[0]}}
                 %li
                   %a{:href => "javascript:void(0);", :title => "About"}
                     %span.about-icon>
@@ -41,7 +41,7 @@
                   %a{:href => "javascript:void(0);", :title => "Contact"}
                     %span.contact-icon>
                     {{link.linkName[3]}}
-          / Header section End
+        / Header section End
         %section.navigation-wrap{"ng-controller"=>"searchLinkController as link"}
           / Navigation strip
           .navbar.less-ipad.blueBack
@@ -79,8 +79,8 @@
               .searchout.align-right
                 %input.search{:name => "", :placeholder => "Search", :type => "text", :value => ""}
                   %input.search-button{:name => "", :type => "button", :value => ""}/
-          / Navigation strip End
-    / Content section start
+    // Navigation strip End
+    // Content section start
     .mainWrap.clearfix
       %section.slider-wrap
         .container
@@ -143,7 +143,7 @@
                 %a.viewmore{:href => "javascript:void(0);"} View More
       %section.clearfix.sectorsMap
         %aside.Sectors.clearfix
-          / gray content
+          // gray content
           .container
             %h2 Sectors we work in
             %ul.worklist.clearfix
@@ -189,8 +189,8 @@
                   %img{:alt => "", :src => "images/map-pointer.png"}/
                 %a#pointer5{"data-content" => "<div><p>Projects <span>0000</span></p><p>Offices <span>0000</span></p><p>Staff Location <span>0000</span></p></div>", :href => "javascript:void(0);", :rel => "popover"}
                   %img{:alt => "", :src => "images/map-pointer.png"}/
-    / Content section End
-    / Footer section start
+    // Content section End
+    // Footer section start
     %footer.footer.clearfix
       .container
         .backto-top
@@ -238,6 +238,6 @@
                 %span.twitt-ico
               %a{:href => "javascript:void(0);"}
                 %span.linked-in-ico
-    / Footer section End
+    // Footer section End
 
     %script{:src => "js/build/production.min.js", :type => "text/javascript"}
