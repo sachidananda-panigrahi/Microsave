@@ -2,7 +2,7 @@
 <section class="login">
     <div class="loginContainer">
         <h3>Log In To Your Account</h3>
-        <form name="frm" ng-controller="formController as form">
+        <form name="frm" ng-controller="formController as form" action="/index" method="post">
             <div class="email">
                 <input id="Email" name="email" type="email" placeholder="Email" value="" spellcheck="false" ng-model="user.email" class="" required>
                 <span class="error" ng-show="frm.email.$dirty && frm.email.$error.required" >Email is Required!!!</span>
